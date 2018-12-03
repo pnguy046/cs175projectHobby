@@ -82,7 +82,8 @@ class _LoginPageState extends State<LoginPage> {
         decoration: new InputDecoration(labelText: 'Email'),
         autocorrect: false,
         validator: (val) => val.isEmpty ? 'Email can\'t be empty.' : null,
-        onSaved: (val) => _email = val,
+        //onSaved: (val) => _email = val,
+        onSaved: (val) => _email = val.trim(),
       )),
       padded(child: new TextFormField(
         key: new Key('password'),
