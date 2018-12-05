@@ -110,7 +110,7 @@ class HomePage extends StatelessWidget {
           center: //new LatLng(
 //33.975034, -117.326006),
           new LatLng(
-              currPos.latitude, currPos.longitude),
+              33.978293, -117.327754),
           zoom: 18.0,
         ),
         layers: [
@@ -134,7 +134,7 @@ class HomePage extends StatelessWidget {
               new Marker(
                 width: 30.0,
                 height: 30.0,
-                point: new LatLng(currPos.latitude, currPos.longitude),
+                point: new LatLng(33.978293, -117.327754),
                 builder: (ctx) => new Container(
                   child: Icon(Icons.my_location),
                 ),
